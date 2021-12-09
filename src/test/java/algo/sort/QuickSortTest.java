@@ -29,6 +29,8 @@ public class QuickSortTest {
         arr1 = list.toArray(new Integer[0]);
         arr2 = list.toArray(new Integer[0]);
         arr3 = list.toArray(new Integer[0]);
+
+        System.out.println("Running test for array of size " + size + ", values to " + bound);
     }
 
     @Test
@@ -55,7 +57,7 @@ public class QuickSortTest {
         System.out.println("Java: " + (System.currentTimeMillis() - startTime));
         System.out.println(comparator.getCompareTimes());
 
-
+        System.out.println("\n");
         assertArrayEquals(arr1, arr3);
         assertArrayEquals(arr2, arr3);
     }
@@ -84,7 +86,7 @@ public class QuickSortTest {
         System.out.println("Java: " + (System.currentTimeMillis() - startTime));
         System.out.println(comparator.getCompareTimes());
 
-
+        System.out.println("\n");
         assertArrayEquals(arr1, arr3);
         assertArrayEquals(arr2, arr3);
     }
@@ -113,7 +115,7 @@ public class QuickSortTest {
         System.out.println("Java: " + (System.currentTimeMillis() - startTime));
         System.out.println(comparator.getCompareTimes());
 
-
+        System.out.println("\n");
         assertArrayEquals(arr1, arr3);
         assertArrayEquals(arr2, arr3);
     }
